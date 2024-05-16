@@ -144,9 +144,6 @@ a {
 .mt-100 {
   margin-top: 100px;
 }
-.ml-140 {
-  margin-left: 140px;
-}
 .mb-5 {
   margin-bottom: 5px;
 }
@@ -156,8 +153,8 @@ a {
 .mb-20 {
   margin-bottom: 20px;
 }
-.mb-50 {
-  margin-bottom: 50px;
+.mb-40 {
+  margin-bottom: 40px;
 }
 .w-auto {
   width: auto;
@@ -195,9 +192,9 @@ a {
 }
 .tit-h1::before {
   position: absolute;
-  left: 65px;
-  bottom: 135px;
-  width: 60px;
+  left: 25px;
+  bottom: 910px;
+  width: 190px;
   height: 5px;
   content: "";
   background-color: #ff512f;
@@ -207,7 +204,6 @@ a {
   font-size: 22px;
   color: #dcf2f1;
 }
-
 .inp-text {
   font-size: 16px;
   border-radius: 2px;
@@ -245,10 +241,69 @@ a {
   font-size: 15px;
   font-weight: 15px;
 }
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* ==========            ========== */
 /* ========== CUSTOM CSS ========== */
 /* ==========            ========== */
-.hold {
-  border: 1px #dcf2f1 solid;
+#winner {
+  color: #dcf2f1;
+  text-align: center;
+}
+.wheel {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.center-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 60px;
+  background-color: #dcf2f1;
+  position: absolute;
+  top: 62%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.triangle {
+  position: absolute;
+  top: -60%;
+  right: -460%;
+  transform: rotate(351deg);
+  width: 315%;
+  height: 200%;
+  background-image: url("/man.png");
+  background-size: cover;
+  background-position: center;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.input_bg {
+  font-size: 22px;
+  position: absolute;
+  right: 640px;
+  top: 315px;
   padding: 10px 20px;
+  background-color: #164b60;
+  border: 3px solid #dcf2f1;
+  caret-color: #dcf2f1;
+  resize: none;
+  color: #dcf2f1;
+}
+.input_bg:focus {
+  background-color: #dcf2f1;
+  border: 3px solid #ff512f;
+  caret-color: #ff512f;
+  resize: none;
+  color: #164b60;
+}
+#winner {
+  font-size: 24px;
+  font-weight: bold;
 }
