@@ -1,0 +1,221 @@
+/* ==========           ========== */
+/* ========== RESET CSS ========== */
+/* ==========           ========== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* ==========            ========== */
+/* ========== CUSTOM CSS ========== */
+/* ==========            ========== */
+.m-5 {
+  margin: 5px;
+}
+.m-10 {
+  margin: 10px;
+}
+.m-20 {
+  margin: 20px;
+}
+.mt-100 {
+  margin-top: 100px;
+}
+.ml-120 {
+  margin-left: 120px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.w-auto {
+  width: auto;
+}
+.h-100p {
+  height: 100vh;
+}
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.clo-white {
+  color: #fff;
+}
+.bg-black {
+  background-color: #000;
+  border-radius: 20px;
+}
+.bg-navy {
+  background-color: #164b60;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+}
+.tit-h1 {
+}
+.inp-text {
+}
+.btn {
+  padding: 8px 20px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  border-radius: 2px;
+  font-weight: 700;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f8e559 51%,
+    #ff512f 100%
+  );
+  cursor: pointer;
+}
+.btn:hover {
+  background-position: right center;
+  color: #fff;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+.txt-1 {
+  font-size: 15px;
+  font-weight: 15px;
+}
+/* ==========            ========== */
+/* ========== CUSTOM CSS ========== */
+/* ==========            ========== */
+.hold {
+  border: 1px #dcf2f1 solid;
+  padding: 10px 20px;
+}
