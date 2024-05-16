@@ -10,32 +10,24 @@
 </head>
 
 <body>
-    <canvas id="fireworksCanvas" style="height: 0; position: absolute; left: -1920px;"></canvas>
     <div class="container center bg-navy h-100p">
         <div class="hold w-auto mt-100 p-relative">
-            <div class="header">
-                <a href="https://vadataEcosytem.com.vn">
-                    <img src="/LOGO.png" alt="Go to home" class="logo">
-                </a>
-                <h1 class="tit-h1 clo-white mb-40">
-                    <span>RANDOM WHEEL, WHO IS THE WINNER ?</span>
-                </h1>
-            </div>
-            <p id="winner" class="mb-20">LET'S SEE</p>
-
-            <div class="wheel">
-                <canvas class="wheel" id="canvas" width="500" height="500"></canvas>
-                <div class="center-circle" onclick="spin()">
-                    <div class="triangle"></div>
-                </div>
-            </div>
-            <div class="input" onchange="createWheel()">
-                <textarea name="" id="textarea" rows="11" cols="20" class="input_bg">JavaScript
-NodeJS
-ReactJS
-ThreeJS
-Canva</textarea>
-            </div>
+            <a href="https://vadataEcosytem.com.vn" class="ml-140">
+                <img src="/LOGO.png" alt="Go to home" class="logo">
+            </a>
+            <h1 class="tit-h1 clo-white mb-50">
+                <span>Enter The <b>Radius</b> Of A Circle</span>
+            </h1>
+            <span class="clo-white mb-10">Radius:</span>
+            <input type="text" name="radius" id="radius" class="mb-10 inp-text">
+            <input type="button" class="btn" id="submit" value="Submit">
+            <br>
+            <span class="txt-1 clo-white">Perimeter: </span>
+            <lable id="perimeter" class="clo-white"></lable>
+            <br>
+            <br>
+            <span class="txt-1 clo-white">Area: </span>
+            <lable id="area" class="clo-white mb-20"></lable>
         </div>
     </div>
 
