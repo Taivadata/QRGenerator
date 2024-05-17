@@ -199,9 +199,9 @@ a {
 }
 .tit-h1::before {
   position: absolute;
-  left: 80px;
-  bottom: 135px;
-  width: 70px;
+  left: 45px;
+  bottom: 620px;
+  width: 190px;
   height: 5px;
   content: "";
   background-color: #ff512f;
@@ -263,3 +263,59 @@ a {
 /* ==========            ========== */
 /* ========== CUSTOM CSS ========== */
 /* ==========            ========== */
+#winner {
+  color: #dcf2f1;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.wheel {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.center-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 60px;
+  background-color: #dcf2f1;
+  position: absolute;
+  top: 62%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.triangle {
+  position: absolute;
+  top: -60%;
+  right: -460%;
+  transform: rotate(351deg);
+  width: 315%;
+  height: 200%;
+  background-image: url("./src/images/man.png");
+  background-size: cover;
+  background-position: center;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.input_bg {
+  font-size: 22px;
+  position: absolute;
+  right: 640px;
+  top: 315px;
+  padding: 10px 20px;
+  background-color: #164b60;
+  border: 3px solid #dcf2f1;
+  caret-color: #dcf2f1;
+  resize: none;
+  color: #dcf2f1;
+}
+.input_bg:focus {
+  background-color: #dcf2f1;
+  border: 3px solid #ff512f;
+  caret-color: #ff512f;
+  resize: none;
+  color: #164b60;
+}
