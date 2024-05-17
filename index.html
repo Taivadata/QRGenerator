@@ -7,6 +7,7 @@
     <title>Vadata Ecosystem</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" href="./src/images/LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -17,22 +18,19 @@
                     <img src="./src/images/LOGO.png" alt="Go to home" class="logo">
                 </a>
                 <h1 class="tit-h1 clo-white mb-40">
-                    <span>RANDOM WHEEL, WHO IS THE WINNER ?</span>
+                    <span>QR CODE GENERATOR ?</span>
                 </h1>
             </div>
-            <p id="winner" class="mb-20">LET'S SEE</p>
-            <div class="wheel">
-                <canvas class="wheel" id="canvas" width="500" height="500"></canvas>
-                <div class="center-circle" onclick="spin()">
-                    <div class="triangle"></div>
-                </div>
+            <div class="input_container">
+                <input class="inp-text pad-spec" type="text" placeholder="Input your Text or URL" name="" id="qrText">
+                <button class="paste-btn mr-10 fz-22 p-absolute" onclick="paste()" id="paste">Paste</button>
+                <button class="reset-btn fz-22 p-absolute" onclick="refresh()" id="reset"><i class="fas fa-undo"
+                        id="reset_icon"></i></button>
             </div>
-            <div class="input" onchange="createWheel()">
-                <textarea name="" id="textarea" rows="11" cols="20" class="input_bg">JavaScript
-NodeJS
-ReactJS
-ThreeJS
-Canva</textarea>
+            <button class="btn mt-20 m-0-auto display-block w-200" onclick="generateQR()">Generate</button>
+            <div id="imgBox">
+                <img src="" id="qrImage">
+                <p class="txt-1" id="wait">Wait a minute!</p>
             </div>
         </div>
     </div>
