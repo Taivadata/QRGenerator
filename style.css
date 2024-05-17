@@ -263,28 +263,3 @@ a {
 /* ==========            ========== */
 /* ========== CUSTOM CSS ========== */
 /* ==========            ========== */
-.input_box {
-  margin: 40px 0;
-  padding: 35px;
-  border-radius: 10px;
-  background: #dcf2f188;
-  display: flex;
-  align-items: center;
-}
-#date {
-  width: 200px;
-  flex: 1;
-  margin-right: 20px;
-  padding: 10px 20px;
-  font-size: 18px;
-  border-radius: 5px;
-  position: relative;
-}
-#result {
-  text-align: center;
-  height: 18px;
-}
-#result span {
-  font-weight: bold;
-  color: #ff512f;
-}
