@@ -199,8 +199,8 @@ a {
 }
 .tit-h1::before {
   position: absolute;
-  left: 128px;
-  bottom: 260px;
+  left: 80px;
+  bottom: 135px;
   width: 70px;
   height: 5px;
   content: "";
