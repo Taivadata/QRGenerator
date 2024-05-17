@@ -199,9 +199,9 @@ a {
 }
 .tit-h1::before {
   position: absolute;
-  left: 25px;
-  bottom: 910px;
-  width: 190px;
+  left: 128px;
+  bottom: 260px;
+  width: 70px;
   height: 5px;
   content: "";
   background-color: #ff512f;
@@ -280,7 +280,7 @@ a {
   border-radius: 5px;
   position: relative;
 }
-#result{
+#result {
   text-align: center;
   height: 18px;
 }
