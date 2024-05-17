@@ -6,33 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vadata Ecosystem</title>
     <link rel="stylesheet" href="/style.css">
-    <link rel="shortcut icon" href="/LOGO.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/images/LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
 </head>
 
 <body>
-    <div class="container center bg-navy h-100p">
+    <div class="container center bg-navy-gradient h-100p">
         <div class="hold w-auto mt-100 p-relative">
-            <a href="https://vadataEcosytem.com.vn" class="ml-140">
-                <img src="/LOGO.png" alt="Go to home" class="logo">
-            </a>
-            <h1 class="tit-h1 clo-white mb-50">
-                <span>Enter The <b>Radius</b> Of A Circle</span>
-            </h1>
-            <span class="clo-white mb-10">Radius:</span>
-            <input type="text" name="radius" id="radius" class="mb-10 inp-text">
-            <input type="button" class="btn" id="submit" value="Submit">
+            <div class="header">
+                <a href="https://vadataEcosytem.com.vn">
+                    <img src="./src/images/LOGO.png" alt="Go to home" class="logo">
+                </a>
+                <h1 class="tit-h1 clo-white mb-40">
+                    <span>HOW OLD ARE YOU ?</span>
+                </h1>
+            </div>
+            <div class="input_box">
+                <input type="date" id="date" class="inp-text">
+                <button class="btn" onclick="calculateAge()">Calculator</button>
+            </div>
+            <p id="result" class="txt-1 clo-white"></p>
             <br>
-            <span class="txt-1 clo-white">Perimeter: </span>
-            <lable id="perimeter" class="clo-white"></lable>
-            <br>
-            <br>
-            <span class="txt-1 clo-white">Area: </span>
-            <lable id="area" class="clo-white mb-20"></lable>
         </div>
     </div>
 
 
     <script src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </body>
 
 </html>

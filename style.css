@@ -1,6 +1,3 @@
-/* ==========           ========== */
-/* ========== RESET CSS ========== */
-/* ==========           ========== */
 html,
 body,
 div,
@@ -82,7 +79,8 @@ time,
 mark,
 audio,
 video,
-input {
+input,
+button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -144,9 +142,6 @@ a {
 .mt-100 {
   margin-top: 100px;
 }
-.ml-140 {
-  margin-left: 140px;
-}
 .mb-5 {
   margin-bottom: 5px;
 }
@@ -156,8 +151,8 @@ a {
 .mb-20 {
   margin-bottom: 20px;
 }
-.mb-50 {
-  margin-bottom: 50px;
+.mb-40 {
+  margin-bottom: 40px;
 }
 .w-auto {
   width: auto;
@@ -170,6 +165,12 @@ a {
   align-items: center;
   flex-direction: column;
 }
+.fz-22 {
+  font-size: 22px;
+}
+.fz-28 {
+  font-size: 28px;
+}
 .clo-white {
   color: #fff;
 }
@@ -179,6 +180,9 @@ a {
 }
 .bg-navy {
   background-color: #164b60;
+}
+.bg-navy-gradient {
+  background: linear-gradient(135deg, #164b60, #1c88b3);
 }
 .logo {
   width: 100px;
@@ -195,9 +199,9 @@ a {
 }
 .tit-h1::before {
   position: absolute;
-  left: 65px;
-  bottom: 135px;
-  width: 60px;
+  left: 25px;
+  bottom: 910px;
+  width: 190px;
   height: 5px;
   content: "";
   background-color: #ff512f;
@@ -207,19 +211,20 @@ a {
   font-size: 22px;
   color: #dcf2f1;
 }
-
 .inp-text {
   font-size: 16px;
   border-radius: 2px;
   padding: 5px 10px;
   border: 2px solid transparent;
   transition: 0.2s;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .inp-text:focus {
   box-shadow: #dcf2f1 1px 2px 10px;
 }
 .btn {
-  padding: 8px 20px;
+  padding: 15px 20px;
   text-align: center;
   transition: 0.5s;
   background-size: 200% auto;
@@ -242,13 +247,44 @@ a {
   transform: scale(0.95);
 }
 .txt-1 {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hold {
+  border: 1px #dcf2f1 solid;
+  padding: 10px 20px;
 }
 /* ==========            ========== */
 /* ========== CUSTOM CSS ========== */
 /* ==========            ========== */
-.hold {
-  border: 1px #dcf2f1 solid;
+.input_box {
+  margin: 40px 0;
+  padding: 35px;
+  border-radius: 10px;
+  background: #dcf2f188;
+  display: flex;
+  align-items: center;
+}
+#date {
+  width: 200px;
+  flex: 1;
+  margin-right: 20px;
   padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+}
+#result{
+  text-align: center;
+  height: 18px;
+}
+#result span {
+  font-weight: bold;
+  color: #ff512f;
 }
